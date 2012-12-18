@@ -1,0 +1,17 @@
+#!/usr/bin/ruby
+class String
+  def no_spaces
+    self.gsub(/\s/, '')
+  end
+end
+
+files   = []
+output  = `git status`
+output.each do |line|
+  if pattern = line.match(/deleted\:/)
+    files << pattern.post_match.no_spaces
+  end
+end
+
+cmd = "git rm #{files.join(' ')}"
+exec cmd

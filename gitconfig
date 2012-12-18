@@ -1,0 +1,23 @@
+[user]
+	name = Rafael Uchôa
+	email = rafael@overmediacast.com
+[alias]
+	amend = commit --amend -C HEAD
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	oneline = log --pretty=oneline -n 4
+	hard = reset HEAD --hard
+	last = log --pretty=oneline -n 1
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	editor = mate -w
+[merge]
+	tool = opendiff
+[credential]
+	helper = osxkeychain

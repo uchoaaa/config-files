@@ -1,0 +1,17 @@
+log/*
+db/*.db
+db/*.sqlite3
+db/schema.rb
+tmp
+.DS_Store
+doc/api
+doc/app
+.loadpath
+.project
+*~
+monitor.rb
+.rvmrc
+public/javascripts/blackbird/
+.livereload
+db/backups/*
+public/system
